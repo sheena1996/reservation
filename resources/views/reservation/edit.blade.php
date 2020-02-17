@@ -41,13 +41,14 @@
 
                         <div class="col-md-4 col-xs-12 align-self-center">
                             <div class="form-group">
-                                <label for="reservationClassification">Reservation Classification</label>
+                                <label for="reservationClassification">Reservation Status</label>
                                 <select class="form-control selectpicker" name="status" data-style="btn btn-link" id="reservationClassification">
                                     <option value="{{ $reservation->classification }}">
                                         Selected : <strong class="text-primary">{{ ($reservation->status == 1) ? 'Approved':'Declined' }}</strong>
                                     </option>
                                     <option value="1">Approved</option>
                                     <option value="0">Declined</option>
+                                     <option value="2">Pending</option>
                                 </select>
                             </div>
                             <br>

@@ -47,8 +47,11 @@
                             <td>
                                 @if($reservation->status == 1)
                                     <p class="text-success">Approved</p>
+                                @elseif($reservation->status == 2)
+                                     <p class="text-warning">Pending</p>
                                 @else
                                     <p class="text-danger">Declined</p>
+
                                 @endif
                             </td>
                             <td class="td-actions text-right">
