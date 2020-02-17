@@ -33,9 +33,11 @@
                             <div class="form-group">
                                 <label for="reservationClassification">Reservation Classification</label>
                                 <select class="form-control selectpicker" name="classification" data-style="btn btn-link" id="reservationClassification">
+                                @if(isset($reservation))
                                 <option value="{{ $reservation->classification }}">
                                     Selected : <strong class="text-primary">{{ $reservation->classification }}</strong>
                                 </option>
+                                @endif
                                 <option value="regular" >Regular</option>
                                 <option value="consignment">Consignment</option>
                                 <option value="liquidation">Liquidation</option>
