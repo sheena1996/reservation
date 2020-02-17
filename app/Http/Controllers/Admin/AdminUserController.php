@@ -167,7 +167,7 @@ class AdminUserController extends Controller
         $admin->email        = $request->email;
 
         if ($request->filled('password')) {
-            $admin->password   =  Hash::make($request->password);
+            $admin->password   =  $request->password;
         }
         $admin->save();
 
