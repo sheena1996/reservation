@@ -81,7 +81,7 @@ class AdminClientReservationController extends Controller
         $reservation = new Reservation();
         $reservation->client_id = $id;
         $reservation->classification = $request->classification;
-        $reservation->status = 2;
+        $reservation->status = null;
         $reservation->total_amount = $total_cost;
         $reservation->save();
 
