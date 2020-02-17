@@ -48,7 +48,6 @@
                                     </option>
                                     <option value="1">Approved</option>
                                     <option value="0">Declined</option>
-                                     <option value="2">Pending</option>
                                 </select>
                             </div>
                             <br>
